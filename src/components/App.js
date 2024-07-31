@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import UserDetail from './UserDetail';
 
 const users = [
-    { id: '1', name: 'John Doe', age: 30, email:"john@gmail.com"},
-    { id: '2', name: 'Jane Smith', age: 25, email:"Jane@gmail.com"},
-    { id: '3', name: 'Alice Johnson', age: 28, email:"Alice@gmail.com"},
+    { id: '1', name: 'Leanne Graham', age: 30, email: "john@gmail.com" },
+    { id: '2', name: 'Jane Smith', age: 25, email: "Jane@gmail.com" },
+    { id: '3', name: 'Alice Johnson', age: 28, email: "Alice@gmail.com" },
 ];
 
 function App() {
@@ -22,10 +22,7 @@ function App() {
                 </ul>
 
                 <Routes>
-                    <Route
-                        path="/user/:id"
-                        element={<UserDetail users={users} />}
-                    />
+                    <Route path="/user/:id" element={<UserDetail users={users} />} />
                 </Routes>
             </div>
         </Router>
